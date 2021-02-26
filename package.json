@@ -1,0 +1,14 @@
+{
+  "name": "docker-sys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:image": "cd ./docker && ./create-image.sh",
+    "docker:build": "",
+    "docker:dev": "docker run -it  --restart=always --name vue_union -v /d/Code/vue_union:/app -P nvm:latest sh -c 'yarn start'"
+  },
+  "author": "",
+  "license": "ISC"
+}
